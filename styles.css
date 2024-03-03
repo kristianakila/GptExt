@@ -1,0 +1,66 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #333; /* Темный фон */
+  color: white; /* Белый текст */
+  width: 300px; /* Фиксированная ширина */
+}
+
+.container {
+  padding: 15px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.button-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 колонки */
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.prompt-button, #linkButton {
+  background-color: #222; /* Темно-синий цвет фона */
+  color: white;
+  border: none;
+  padding: 9px 18px; /* Уменьшенный паддинг */
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 14px;
+  cursor: pointer;
+  transition: transform 0.1s ease-out, background-color 0.1s ease-out;
+  border-radius: 5px; /* Слегка закругленные углы */
+}
+
+.prompt-button:active, #linkButton:active {
+  transform: scale(0.9); /* Эффект уменьшения при нажатии */
+}
+
+.prompt-button:hover, #linkButton:hover {
+  background-color: #90feb5; /* Зеленый цвет при наведении */
+}
+
+#linkButton {
+  background-color: transparent; /* Прозрачный фон */
+  color: #D71063; /* Цвет текста */
+  text-decoration: underline; /* Подчеркивание */
+  grid-column: span 3; /* Растягиваем на всю ширину сетки */
+}
+
+.success-message {
+  color: #28a745; /* Зеленый цвет */
+  margin-top: 15px;
+  text-align: center;
+  font-size: 14px;
+  grid-column: span 3; /* Растягиваем сообщение на всю ширину ряда */
+}
+
+img {
+  display: block;
+  margin: 0 auto; /* Выравнивание по центру */
+  max-width: 100%; /* Для поддержки адаптивности */
+}
