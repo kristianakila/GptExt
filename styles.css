@@ -4,7 +4,7 @@ body, html {
   font-family: Arial, sans-serif;
   background-color: #333; /* Темный фон */
   color: white; /* Белый текст */
-  width: 300px; /* Фиксированная ширина */
+  width: 400px; /* Фиксированная ширина */
 }
 
 .container {
